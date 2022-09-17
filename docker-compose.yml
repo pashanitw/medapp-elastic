@@ -78,6 +78,7 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=certs/ca/ca.crt
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
+      - network.host=0.0.0.0
     mem_limit: ${MEM_LIMIT}
     ulimits:
       memlock:
